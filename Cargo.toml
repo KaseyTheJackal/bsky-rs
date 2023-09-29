@@ -1,0 +1,15 @@
+[package]
+name = "bsky"
+version = "0.1.0"
+edition = "2021"
+homepage = "https://fluffypuppykasey.com"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+adenosine = "0.4.0"
+
+[workspace.dependencies.libcosmic]
+git = "https://github.com/pop-os/libcosmic"
+default-features = false
+features = ["wayland", "tokio"]
